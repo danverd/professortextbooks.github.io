@@ -1,7 +1,7 @@
 <html>
 <body>
 
-Book: <?php echo $_POST["alpha"]; ?><br>
+Book: <?php echo $_GET["alpha"]; ?><br>
 Course Name: <?php echo $_GET["beta"]; ?><br>
 Professor: <?php echo $_GET["charlie"]; ?><br>
 ISBN: <?php echo $_GET["isbn"]; ?><br>
