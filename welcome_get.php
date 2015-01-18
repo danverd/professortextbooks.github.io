@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $textbook = mysql_real_escape_string($_POST['textbookname']);
 $username = mysql_real_escape_string($_POST['bravo']);
@@ -35,3 +36,12 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+=======
+<html>
+<body>
+
+Hello World.
+
+</body>
+</html>
+>>>>>>> origin/gh-pages
