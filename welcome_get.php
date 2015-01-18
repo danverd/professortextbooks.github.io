@@ -6,7 +6,7 @@ $isbn = $_POST['isbn'];
 $usefulness = $_POST['response-rate1'];
 $value = $_POST['response-rate2'];
 $clarity = $_POST['response-rate3'];
-if(isset($_POST['radio1'])){$need = $_POST['radio1']; }
+$need = $_POST['radio1']; 
 
 $comment = $_POST['textarea'];
 
