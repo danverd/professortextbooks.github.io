@@ -8,7 +8,7 @@ $value = $_POST['response-rate2'];
 $clarity = $_POST['response-rate3'];
 $need = $_POST['switch1']; 
 if($need == null) {
-	$need = false;
+	$need = "false";
 }
 $comment = $_POST['textarea'];
 
