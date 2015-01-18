@@ -16,7 +16,7 @@ $conn = new mysqli("localhost", "root", "zHfApkXe1g");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
+echo "Connected successfully";
 
 $sql = "SELECT ISBN FROM book";
 $result = $conn->query($sql);
