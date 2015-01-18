@@ -22,8 +22,9 @@ $sql = "SELECT ISBN FROM book";
 $result = $conn->query($sql);
 
 if ($result == $isbn) {
-	$sql = "UPDATE review SET courseName='coursename', ProfessorName= 'professor', UsefulnessRating= 'response-rate1', ValueRating= 'response-rate2', ClarityRating='response-rate3', Need='switch1', Comment='textarea' WHERE ($result==$isbn);" }
-	}
+	$sql = "UPDATE review SET courseName='coursename', ProfessorName= 'professor', UsefulnessRating= 'response-rate1', 
+	ValueRating= 'response-rate2', ClarityRating='response-rate3', Need='switch1', Comment='textarea' WHERE ($result==$isbn);" }
+	
 else {
 	$sql = "INSERT INTO book (TextbookName, ISBN, CourseName, ProfessorName)
 	VALUES ('textbookname', 'isbn', 'coursename', 'professor')";
