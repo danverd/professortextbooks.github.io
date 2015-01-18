@@ -1,12 +1,12 @@
 <?php
-$textbook = $_POST['textbookname'];
-$coursename = $_POST['coursename'];
-$professor = $_POST['professor'];
-$isbn = $_POST['isbn'];
-$usefulness = $_POST['response-rate1'];
-$value = $_POST['response-rate2'];
-$clarity = $_POST['response-rate3'];
--$need = $_POST['radio1']; 
+$textbook = "textbook";
+$coursename = "coursename";
+$professor = "professor";
+$isbn = ;
+$usefulness = 4;
+$value = 2;
+$clarity = 4;
+-$need = yes; 
 if($need == null) {
 	$need = "false";
 }
