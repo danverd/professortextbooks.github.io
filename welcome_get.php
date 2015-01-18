@@ -1,11 +1,11 @@
 <?php
-$textbookname = mysql_real_escape_string($_POST['textbookname']);
+$textbook = mysql_real_escape_string($_POST['textbookname']);
 $coursename = mysql_real_escape_string($_POST['coursename']);
-$professorname = mysql_real_escape_string($_POST['professor']);
+$professor = mysql_real_escape_string($_POST['professor']);
 $isbn = mysql_real_escape_string($_POST['isbn']);
-$usefulnessrating = mysql_real_escape_string($_POST['response-rate1']);
-$valuerating = mysql_real_escape_string($_POST['response-rate2']);
-$clarityrating = mysql_real_escape_string($_POST['response-rate3']);
+$usefulness = mysql_real_escape_string($_POST['response-rate1']);
+$value = mysql_real_escape_string($_POST['response-rate2']);
+$clarity = mysql_real_escape_string($_POST['response-rate3']);
 $need = mysql_real_escape_string($_POST['switch1']);
 $comment = mysql_real_escape_string($_POST['textarea']);
 
