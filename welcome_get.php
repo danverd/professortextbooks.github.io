@@ -30,7 +30,7 @@ if (TRUE) {
 	$sql = "INSERT INTO book (TextbookName, ISBN, CourseName, ProfessorName)
 	VALUES ($textbook, $isbn, $coursename, $professor)";
 	//$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
-	V//ALUES ($isbn, $usefulness, $value, $clarity, $need, $comment)";
+	//ALUES ($isbn, $usefulness, $value, $clarity, $need, $comment)";
 }
 
 
