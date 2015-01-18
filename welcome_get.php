@@ -11,7 +11,7 @@ $comment = mysql_real_escape_string($_POST['textarea']);
 
 
 // Create connection
-$conn = new mysqli("localhost", "root", "zHfApkXelg");
+$conn = new mysqli("localhost", "root", "zHfApkXe1g", "catalog");
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
