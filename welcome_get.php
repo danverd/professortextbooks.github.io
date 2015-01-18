@@ -26,10 +26,10 @@ echo "Connected successfully";
 //}
 	
 if (TRUE){
-	$sql = "INSERT INSERTTO book (TextbookName, ISBN, CourseName, ProfessorName)
+	$sql = "INSERT INTO book (TextbookName, ISBN, CourseName, ProfessorName)
 	VALUES ('textbookname', 'isbn', 'coursename', 'professor')";
-	$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
-	VALUES ('textbookname', 'isbn', 'response-rate1', 'response-rate2', 'response-rate3', 'switch1', 'textarea')";
+	//$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
+	//VALUES ('textbookname', 'isbn', 'response-rate1', 'response-rate2', 'response-rate3', 'switch1', 'textarea')";
 	}
 
 if ($conn->query($sql) === TRUE) {
