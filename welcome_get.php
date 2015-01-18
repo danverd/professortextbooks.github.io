@@ -10,7 +10,7 @@ $clarity = $_POST['response-rate3'];
 if($need == null) {
 	$need = "false";
 }
-$comment = $_POST['textarea'];
+//$comment = $_POST['textarea'];
 
 
 // Create connection
@@ -29,8 +29,8 @@ if (TRUE) {
 	//else {
 	$sql = "INSERT INTO book (TextbookName, ISBN, CourseName, ProfessorName)
 	VALUES ($textbook, $isbn, $coursename, $professor)";
-	$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
-	VALUES ($isbn, $usefulness, $value, $clarity, $need, $comment)";
+	//$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
+	V//ALUES ($isbn, $usefulness, $value, $clarity, $need, $comment)";
 }
 
 
