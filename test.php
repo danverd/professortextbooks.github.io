@@ -4,7 +4,7 @@ $username = "root";
 $password = "zHfApkXelg";
 
 // Create connection
-$conn = mysql_connect(localhost, root)
+$conn = mysql_connect("localhost", "root")
 
 // Check connection
 if ($conn->connect_error) {
