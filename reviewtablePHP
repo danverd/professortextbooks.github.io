@@ -1,0 +1,33 @@
+
+<?php
+	$servername = "localhost";
+	$username = "root";
+	$password = "password";
+	$dbname = "professortextbooks";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+	    die("Connection failed: " . $conn->connect_error);
+	} 
+
+	// sql to create table
+	$sql = "CREATE TABLE review (
+	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+	UsefulnessRating VARCHAR() NOT NULL,
+	ValueRating VARCHAR()NOT NULL,
+	ClarityRating VARCHAR() NOT NULL,
+	Need BIT() NOT NULL,
+	Comment VARCHAR(140),
+
+	)";
+
+	if ($conn->query($sql) === TRUE) {
+	    echo "Table MyGuests created successfully";
+	} else {
+	    echo "Error creating table: " . $conn->error;
+	}
+
+	$conn->close();
+?>
