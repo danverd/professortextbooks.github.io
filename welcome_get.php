@@ -6,7 +6,7 @@ $isbn = ;
 $usefulness = 4;
 $value = 2;
 $clarity = 4;
--$need = yes; 
+$need = yes; 
 if($need == null) {
 	$need = "false";
 }
