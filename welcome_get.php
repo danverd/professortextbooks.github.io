@@ -1,13 +1,13 @@
 <?php
-$textbook = mysql_real_escape_string($_POST['textbookname']);
-$coursename = mysql_real_escape_string($_POST['coursename']);
-$professor = mysql_real_escape_string($_POST['professor']);
-$isbn = mysql_real_escape_string($_POST['isbn']);
-$usefulness = mysql_real_escape_string($_POST['response-rate1']);
-$value = mysql_real_escape_string($_POST['response-rate2']);
-$clarity = mysql_real_escape_string($_POST['response-rate3']);
-$need = mysql_real_escape_string($_POST['switch1']);
-$comment = mysql_real_escape_string($_POST['textarea']);
+$textbook = $_POST['textbookname'];
+$coursename = $_POST['coursename'];
+$professor = $_POST['professor'];
+$isbn = $_POST['isbn'];
+$usefulness = $_POST['response-rate1'];
+$value = $_POST['response-rate2'];
+$clarity = $_POST['response-rate3'];
+$need = $_POST['switch1'];
+$comment = $_POST['textarea'];
 
 
 // Create connection
