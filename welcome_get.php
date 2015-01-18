@@ -11,21 +11,21 @@ $comment = mysql_real_escape_string($_POST['textarea']);
 
 
 // Create connection
-$conn = new mysqli("localhost", "root", "zHfApkXe1g");
+$conn = new mysqli("localhost", "root", "zHfApkXe1g", "catalog");
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 echo "Connected successfully";
 
-$sql = "SELECT ISBN FROM book";
-$result = $conn->query($sql);
+//$sql = "SELECT ISBN FROM book";
+//$result = $conn->query($sql);
 
-if ($result == $isbn) {
-	$sql = "UPDATE review SET courseName='coursename', ProfessorName= 'professor', UsefulnessRating= 'response-rate1', ValueRating= 'response-rate2', ClarityRating='response-rate3', Need='switch1', Comment='textarea' WHERE ($result==$isbn)"; 
-}
+//if ($result == $isbn) {
+//	$sql = "UPDATE review SET courseName='coursename', ProfessorName= 'professor', UsefulnessRating= 'response-rate1', ValueRating= 'response-rate2', ClarityRating='response-rate3', Need='switch1', Comment='textarea' WHERE ($result==$isbn)"; 
+//}
 	
-else {
+if (TRUE){
 	$sql = "INSERT INSERTTO book (TextbookName, ISBN, CourseName, ProfessorName)
 	VALUES ('textbookname', 'isbn', 'coursename', 'professor')";
 	$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
