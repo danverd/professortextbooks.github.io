@@ -6,7 +6,7 @@ $isbn = $_POST['isbn'];
 $usefulness = $_POST['response-rate1'];
 $value = $_POST['response-rate2'];
 $clarity = $_POST['response-rate3'];
--$need = $_POST['radio1']; 
+-$need = $_POST['switch1']; 
 if($need == null) {
 	$need = "false";
 }
@@ -27,9 +27,9 @@ if ($conn->connect_error) {
 if (TRUE) {
 	//$sql = "UPDATE review SET courseName = $coursename, ProfessorName = $professor, UsefulnessRating = $usefulness, ValueRating = $value, ClarityRating = $clarity, Need= $switch1, Comment = $comment WHERE ($result==$isbn);" }
 	//else {
-	$sql = "INSERT INTO book (TextbookName, ISBN, CourseName, ProfessorName)
+	$sql = "INSERT INTO book (textbook, isbn, coursename, professorname)
 	VALUES ($textbook, $isbn, $coursename, $professor)";
-	$sql = "INSERT INTO review (ISBN, UsefulnessRating, ValueRating, ClarityRating, Need, Comment)
+	$sql = "INSERT INTO review (isbn, usefulnessrating, valuerating, clarityrating, need, comment)
 	VALUES ($isbn, $usefulness, $value, $clarity, $need, $comment)";
 }
 
